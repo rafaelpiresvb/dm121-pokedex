@@ -1,0 +1,308 @@
+:root {
+    --grass-color: #74cb48;
+    --rock-color: #B69E31;
+    --ghost-color: #70559B;
+    --steel-color: #B7B9D0;
+    --water-color: #6493EB;
+    --psychic-color: #FB5584;
+    --ice-color: #9AD6DF;
+    --dark-color: #75574C;
+    --fairy-color: #E69EAC;
+    --normal-color: #AAA67F;
+    --fighting-color: #C12239;
+    --flying-color: #A891EC;
+    --poison-color: #A43E9E;
+    --ground-color: #DEC16B;
+    --bug-color: #A7B723;
+    --fire-color: #F57D31;
+    --electric-color: #F9CF30;
+    --dragon-color: #7037FF;
+}
+
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+  }
+
+.card {
+    float: left;
+    margin: 0 8px 8px 0;
+    width: 104px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 8px;
+    text-align: right;
+    padding-right: 8px;
+    color: #b8b8b8;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 72px;
+    height: 72px;
+}
+
+.card .section-name {
+    background-color: #b8b8b8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    line-height: 100%;
+}
+
+/* Grass variation */
+.card.grass h2 {
+    color: var(--grass-color);
+}
+
+.card.grass {
+    border-color: var(--grass-color);
+}
+
+.card.grass .section-name {
+    background-color: var(--grass-color);
+}
+
+/* Rock variation */
+.card.rock h2 {
+    color: var(--rock-color);
+}
+
+.card.rock {
+    border-color: var(--rock-color);
+}
+
+.card.rock .section-name {
+    background-color: var(--rock-color);
+}
+
+/* Ghost variation */
+.card.ghost h2 {
+    color: var(--ghost-color);
+}
+
+.card.ghost {
+    border-color: var(--ghost-color);
+}
+
+.card.ghost .section-name {
+    background-color: var(--ghost-color);
+}
+
+/* Steel variation */
+.card.steel h2 {
+    color: var(--steel-color);
+}
+
+.card.steel {
+    border-color: var(--steel-color);
+}
+
+.card.steel .section-name {
+    background-color: var(--steel-color);
+}
+
+/* Water variation */
+.card.water h2 {
+    color: var(--water-color);
+}
+
+.card.water {
+    border-color: var(--water-color);
+}
+
+.card.water .section-name {
+    background-color: var(--water-color);
+}
+
+/* Psychic variation */
+.card.psychic h2 {
+    color: var(--psychic-color);
+}
+
+.card.psychic {
+    border-color: var(--psychic-color);
+}
+
+.card.psychic .section-name {
+    background-color: var(--psychic-color);
+}
+
+/* Ice variation */
+.card.ice h2 {
+    color: var(--ice-color);
+}
+
+.card.ice {
+    border-color: var(--ice-color);
+}
+
+.card.ice .section-name {
+    background-color: var(--ice-color);
+}
+
+/* Dark variation */
+.card.dark h2 {
+    color: var(--dark-color);
+}
+
+.card.dark {
+    border-color: var(--dark-color);
+}
+
+.card.dark .section-name {
+    background-color: var(--dark-color);
+}
+
+/* Fairy variation */
+.card.fairy h2 {
+    color: var(--fairy-color);
+}
+
+.card.fairy {
+    border-color: var(--fairy-color);
+}
+
+.card.fairy .section-name {
+    background-color: var(--fairy-color);
+}
+
+/* Normal variation */
+.card.normal h2 {
+    color: var(--normal-color);
+}
+
+.card.normal {
+    border-color: var(--normal-color);
+}
+
+.card.normal .section-name {
+    background-color: var(--normal-color);
+}
+
+/* Fighting variation */
+.card.fighting h2 {
+    color: var(--fighting-color);
+}
+
+.card.fighting {
+    border-color: var(--fighting-color);
+}
+
+.card.fighting .section-name {
+    background-color: var(--fighting-color);
+}
+
+/* Flying variation */
+.card.flying h2 {
+    color: var(--flying-color);
+}
+
+.card.flying {
+    border-color: var(--flying-color);
+}
+
+.card.flying .section-name {
+    background-color: var(--flyingflying-color);
+}
+
+/* Poison variation */
+.card.poison h2 {
+    color: var(--poison-color);
+}
+
+.card.poison {
+    border-color: var(--poison-color);
+}
+
+.card.poison .section-name {
+    background-color: var(--poison-color);
+}
+
+/* Ground variation */
+.card.ground h2 {
+    color: var(--ground-color);
+}
+
+.card.ground {
+    border-color: var(--ground-color);
+}
+
+.card.ground .section-name {
+    background-color: var(--ground-color);
+}
+
+/* Bug variation */
+.card.bug h2 {
+    color: var(--bug-color);
+}
+
+.card.bug {
+    border-color: var(--bug-color);
+}
+
+.card.bug .section-name {
+    background-color: var(--bug-color);
+}
+
+/* Fire variation */
+.card.fire h2 {
+    color: var(--fire-color);
+}
+
+.card.fire {
+    border-color: var(--fire-color);
+}
+
+.card.fire .section-name {
+    background-color: var(--fire-color);
+}
+
+/* Electric variation */
+.card.electric h2 {
+    color: var(--electric-color);
+}
+
+.card.electric {
+    border-color: var(--electric-color);
+}
+
+.card.electric .section-name {
+    background-color: var(--electric-color);
+}
+
+/* Dragon variation */
+.card.dragon h2 {
+    color: var(--dragon-color);
+}
+
+.card.dragon {
+    border-color: var(--dragon-color);
+}
+
+.card.dragon .section-name {
+    background-color: var(--dragon-color);
+}
+
+/* End variations */
+
+.card .section-name h2 {
+    padding: 0;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 10px;    
+}
