@@ -20,13 +20,48 @@
 }
 
 * {
-    font-family: Montserrat;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
   }
 
+  .header {
+    display: flex;
+    margin: 24px 16px 16px 16px;
+    flex-direction: column;
+  }
+
+  .header header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header div {
+    display: flex;
+    flex-direction: row;
+    height: 16px;
+    align-items: flex-start;
+    padding: 8px 0px;
+    gap: 2px;
+    width: 20px;
+    height: 32px;
+    align-items: baseline;
+  }
+
+  input {
+    text-align: center;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 8px;
+    margin: 0px 16px 0px 16px;    
+}
+
 .card {
+    flex: auto;
     float: left;
-    margin: 0 8px 8px 0;
     width: 104px;
     height: 112px;
     display: flex;

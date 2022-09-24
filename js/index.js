@@ -14,6 +14,9 @@ async function getPokemons() {
 }
 
 async function createPokemon(pokemon) {
+    const container = document.getElementById("container");
+
+
     const div = document.createElement("div");
     div.className = `card ${pokemon.types[0].type.name}`;
     
@@ -30,12 +33,14 @@ async function createPokemon(pokemon) {
     sectionName.appendChild(h2Name);
 
     const img = document.createElement("img");
-    img.src = pokemon.sprites.front_default;
+    img.alt = `${pokemon.name}-image`;
+    img.src = pokemon.sprites.other['official-artwork'].front_default;
 
     div.appendChild(h2Number);
     div.appendChild(img);
     div.appendChild(sectionName);
-    document.body.appendChild(div);
+
+    container.appendChild(div);
 }
 
 getPokemons();

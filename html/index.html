@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
     <title>Pokedex</title>
     <script src="../js/index.js" defer></script>
     <link rel="stylesheet" href="../css/style.css" />
@@ -12,14 +19,26 @@
 
 <body>
 
-    <!-- <div class="card">
-        <h2>#001</h2>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
-        <section class="section-name">
-            <h2 class="name">bulbasaur</h2>
-        </section>
-    </div> -->
+    <div class="header">
+        <section>
+            <header>
+                <img src="../assets/image/pokeball.svg" alt="pokeball logo" />
+                <h2>Pokédex</h2>
+                <div>
+                    <p>#</p>
+                    <img src="../assets/image/sort.svg" alt="sort icon" />
+                </div>
 
+            </header>
+        </section>
+
+        <input type="search" placeholder="🔎 search" />
+
+    </div>
+
+    <div id="container" class="container">
+
+    </div>
 </body>
 
 </html>
