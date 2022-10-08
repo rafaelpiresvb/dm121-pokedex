@@ -6,7 +6,7 @@ async function fetchData(pokeNumber) {
 
 async function getPokemons() {
     let pokemons = [];
-    for (var i = 1; i <= 150; i++) {
+    for (var i = 1; i <= 151; i++) {
         const pokemon = await fetchData(i);
         pokemons.push(pokemon);
     }
